@@ -19,3 +19,12 @@ This tool interacts directly with the public Binance API to fetch 24-hour ticker
 2. Install the required dependencies:
    ```bash
    pip install requests pandas
+   ```
+3. Run the script:
+   ```bash
+   python crypto_scraper.py
+   ```
+4. Find the generated `crypto_market_data_YYYYMMDD.csv` file in your root folder.
+
+---
+*Developed for data automation and Web3 market analysis.*
