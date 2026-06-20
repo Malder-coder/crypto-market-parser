@@ -11,7 +11,8 @@ def fetch_crypto_data():
     url = "https://api.binance.com/api/v3/ticker/24hr"
     
     try:
-        response = requests.get(url)
+        # Added timeout to prevent infinite hanging if the API is unresponsive
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
         data = response.json()
         
