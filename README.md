@@ -1,30 +1,44 @@
-# 🚀 Crypto Market Scraper
+# 🚀 Web3 & Crypto Python Automation Suite
 
-A lightweight and efficient Python script designed to extract real-time market data for cryptocurrency pairs. 
+A collection of lightweight, production-ready Python scripts designed for crypto data extraction, automated alerting, and blockchain interaction. 
 
-This tool interacts directly with the public Binance API to fetch 24-hour ticker statistics, filters the top 50 most actively traded USDT pairs by volume, and automatically exports the clean data into a CSV format for further analysis or accounting.
+These tools are built for traders, developers, and analysts looking to automate their Web3 workflows without complex infrastructure.
 
-## 🛠 Features
-* **No API Keys Required:** Uses public endpoints for hassle-free execution.
-* **Volume Sorting:** Automatically identifies the highest liquidity markets (Top 50).
-* **Automated Export:** Generates a timestamped `.csv` file ready for Excel or Pandas integration.
+## 🛠 Included Tools
+
+### 1. 📊 Crypto Market Scraper (`crypto_scraper.py`)
+* Extracts real-time 24-hour ticker statistics using the public Binance API.
+* Filters and sorts the top 50 highest-volume USDT trading pairs.
+* Automatically exports clean data into a timestamped `.csv` format for Excel or Pandas.
+
+### 2. 🚨 Telegram Price Alert Bot (`tg_price_alert.py`)
+* Monitors real-time cryptocurrency asset prices via custom intervals.
+* Triggers instant automated HTML-formatted Telegram alerts when target thresholds are breached.
+* Lightweight and optimized for running 24/7 on background servers.
+
+### 3. ⛓ Ethereum Wallet Tracker (`eth_wallet_tracker.py`)
+* Interacts directly with the Ethereum blockchain via public RPC endpoints (Cloudflare RPC).
+* Fetches exact live ETH balances of any given on-chain wallet address in real-time.
+* Requires zero API keys or centralized platform registrations.
 
 ## 💻 Tech Stack
 * Python 3.x
-* `requests` (API interaction)
-* `pandas` (Data structuring and export)
+* `requests` (API & RPC communication)
+* `pandas` (Data structuring and analytical export)
 
-## ⚙️ How to Use
-1. Clone the repository to your local machine.
-2. Install the required dependencies:
+## ⚙️ Quick Start
+
+1. Clone the repository and install required packages:
    ```bash
    pip install requests pandas
    ```
-3. Run the script:
+
+2. Run any specific script based on your requirements:
    ```bash
    python crypto_scraper.py
+   python tg_price_alert.py
+   python eth_wallet_tracker.py
    ```
-4. Find the generated `crypto_market_data_YYYYMMDD.csv` file in your root folder.
 
 ---
-*Developed for data automation and Web3 market analysis.*
+*Developed for data automation, blockchain tracking, and automated Web3 market analysis.*
