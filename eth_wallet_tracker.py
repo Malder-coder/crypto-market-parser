@@ -16,7 +16,8 @@ def get_eth_balance(wallet_address):
     }
     
     try:
-        response = requests.post(ETH_RPC_URL, json=payload)
+        # Added timeout for RPC stability
+        response = requests.post(ETH_RPC_URL, json=payload, timeout=10)
         response.raise_for_status()
         data = response.json()
         
