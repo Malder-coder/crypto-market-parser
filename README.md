@@ -1,6 +1,6 @@
 # 🚀 Web3 & Crypto Python Automation Suite
 
-A collection of lightweight, production-ready Python scripts designed for crypto data extraction, automated alerting, and blockchain interaction. 
+A collection of lightweight, production-ready Python scripts designed for crypto data extraction, automated alerting, blockchain interaction, and metadata scanning. 
 
 These tools are built for traders, developers, and analysts looking to automate their Web3 workflows without complex infrastructure.
 
@@ -21,6 +21,11 @@ These tools are built for traders, developers, and analysts looking to automate 
 * Fetches exact live ETH balances of any given on-chain wallet address in real-time.
 * Requires zero API keys or centralized platform registrations.
 
+### 4. 🔍 On-Chain Metadata Scanner (`discord_finder.py`)
+* Connects to GeckoTerminal API to monitor newly created liquidity pools in real-time.
+* Scans raw network metadata structure to filter projects with early embedded social links.
+* Optimized for micro-cap research and automated token discovery.
+
 ## 💻 Tech Stack
 * Python 3.x
 * `requests` (API & RPC communication)
@@ -38,6 +43,7 @@ These tools are built for traders, developers, and analysts looking to automate 
    python crypto_scraper.py
    python tg_price_alert.py
    python eth_wallet_tracker.py
+   python discord_finder.py
    ```
 
 ---
